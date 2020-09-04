@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Estilos_FrmCalcularPasajeAvion.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript"
+        src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.js"></script>
+    <title>Calcular_pasase_de_avion</title>
+</head>
+
+<body>
+    <div class="contenedor" id="formulario">
+
+        <div class="frm-header">
+            <h1 class="frm-title"> <span> Precio de su pasaje en avión </span> </h1>
+        </div>
+
+        <label class="frm-label"> Distancia a recorrer (Km) :</label>
+        <input id="input_distancia" type="number" pattern=[0-9] class="frm-input" placeholder="Ingrese la distancia ..."
+            autocomplete="off" name="distancia" value="val">
+
+        <label class="frm-label"> Número días de estancia (#):</label>
+        <input id="dias_estancia" type="number" pattern=[0-9] class="frm-input"
+            placeholder="Ingrese el numero de dias ..." autocomplete="off" name="estancia" value=".val">
+
+        <button id="btn" class="btn">¡Presiona para Calcular valor!</button>
+
+        <div class="result">
+            <label id="resultado" class="lbl-result"> </label>
+            <br>
+            <label id="vlr-descuento" class="lbl-result"> </label>
+        </div>
+    </div>
+
+
+    <script src="../JAVASCRIPT/Js_CalcularPasajeAvion.js"></script>
+</body>
+
+</html>
